@@ -1,2 +1,2 @@
 # springbootangularDemo
-Demo Spring boot Angular app
+This is Angular code
