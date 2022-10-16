@@ -1,0 +1,46 @@
+<h3>
+  Update Employee
+</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input type="text" class="form-control" id="fname" required [(ngModel)]="employee.firstName" name="fname">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Last Name</label>
+        <input type="text" class="form-control" id="lname" required [(ngModel)]="employee.lastName" name="lname">
+      </div>
+
+    <div class="form-group">
+      <label for="name">Email Id</label>
+      <input type="text" class="form-control" id="email" required [(ngModel)]="employee.email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Phone number</label>
+      <input type="text" class="form-control" id="phone" required [(ngModel)]="employee.phone" name="phone">
+    </div>
+
+    <div class="form-group">
+        <label for="name">Hire Date</label>
+        <input type="date" class="form-control" id="hdate"   [ngModel] ="hdate | date:'mm-dd-yyyy'" required [(ngModel)]="employee.hireDate" name="hdate">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Salary</label>
+        <input type="text" class="form-control" id="salary" required [(ngModel)]="employee.salary" name="salary">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Manager Id</label>
+        <input type="text" class="form-control" id="managerId" required [(ngModel)]="employee.managerId" name="managerId">
+      </div>
+    <div class="form-group">
+      <label for="name">Department Id</label>
+      <input type="text" class="form-control" id="department" required [(ngModel)]="employee.department" name="department">
+    </div>
+<button style='margin-right:16px' class="btn btn-success">Submit</button>
+<button style='margin-right:16px' (click)="list()" class="btn btn-success">Back to Employees</button>
+
+</form>
